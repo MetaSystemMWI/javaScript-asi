@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- searching string  -->
+    <!-- indexof, lastindexof, saerch, match, matchall, includes, startwith, endswith -->
+
+    <script>
+        // let t =`I love 
+        // Pakistan "may 
+        // you ${4+5} live love
+        //  long"`;
+        // let index = t.indexOf("love");
+        // let index = t.lastIndexOf("live");
+        // let index = t.search(/love/);
+        // let index = t.match(/LOVE/gi);
+        // const i = t.matchAll(/love/g);
+        // let index = t.matchAll("love");
+        // alert(Array.from(i));
+        // let index = t.includes("love",2);
+        // let index = t.startsWith("I");
+        // let index = t.endsWith("g");
+
+        // templetes
+        // literal, string, back-tics 
+
+
+        // let f = "Ali"
+        // let l = "Ahmed"
+        // let t = `welcome ${f},${l}, Age: ${34+6}`;
+        // alert(t);
+        // alert(t);
+
+
+
+        let h = "Templete HTML";
+        let t = ["JS","HTML","CSS"];
+        let html = `<h2>${h}</h2><ul>`;
+            for(const x of t){
+                html =html+`<li>${x}</li>`;
+            }
+        html +=`</ul>`;
+        document.write(html);
+
+
+        // <h1>Hello</h1>
+    </script>
+</body>
+</html>
