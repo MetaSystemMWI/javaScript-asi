@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="document.getElementById('demo').innerHTML=getRndInteger(0,10)">Click me</button>
+    <p id="demo"></p>
+   <script>
+    // // let c = Math.floor(Math.random() * 100);
+    // let c = Math.floor(Math.random() * 100) + 1;
+    // document.write(c);
+    function getRndInteger(min, max){
+        return Math.floor(Math.random() * (max-min)) + min;
+    }
+
+    // yes/No
+    // no/yes
+    // true /false
+    let b = 10/"apple";
+    let a = Boolean(b);
+    document.write(a);
+    ==, ===, !=, !==, >, < , > =, < = , &&, ||, ! , 
+   </script> 
+</body>
+</html>
