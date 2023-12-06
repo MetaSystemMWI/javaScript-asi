@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        // const array = ["a","b","c"];
+        // switch(array){
+        //     case 'a':
+        //         document.write(array);
+        //         break;
+        // }
+
+        // let day;
+        // switch(new Date().getDay()){
+        //     case 0: 
+        //     case 1: 
+        //     day ="Sunday";
+        //     break;
+        //     case 1: 
+        //     day ="Monday";
+        //     break;
+        //     case 2: 
+        //     day ="Tuesday";
+        //     break;
+        //     case 3: 
+        //     day ="Wednesday";
+        //     break;
+        //     case 4: 
+        //     day ="Thursday";
+        //     break;
+        //     case 5: 
+        //     day ="Friday";
+        //     break;
+        //     case 6: 
+        //     day ="Saturday";
+        //     break;
+        //     default:
+        //         day="Looking farward to the weekend";
+        // }
+        // document.getElementById("demo").innerHTML = "Today is" + day;
+
+
+        // let i=2;
+        // for( ; i < 5;){
+        //     document.write("Pakistan");
+        //     i++
+        // }
+        // // for/in,
+        // // for/of,
+
+        // const p = {fname:"Ali",lname:"ahmed", age:25};
+        const p = ["mango","apple"];
+        let t = " ";
+        // // for(let x in p){
+        // //     t = t + p[x];
+        // // }
+        // p.forEach(myFunction());
+        // function myFunction(value, index, array){
+        //     t = t + value;
+        //     document.write(t);
+        // }
+        
+
+        for (let x of p){
+            t = t+x;
+        }
+        document.write(t);
+
+    </script>
+</body>
+</html>
