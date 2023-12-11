@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+
+        // addalert("hllow");
+        // try{
+        //     addalerty("welcome guest");
+        // }
+        // catch(err){
+        //     document.getElementById("demo").innerHTML=err.message;
+        // }
+        // hello  = function(){
+        //     return "Hello";
+        // }
+        // document.write(hello());
+
+        // hello = () => {
+        //     return "Hello";
+        // }
+        // document.write(hello());
+
+
+        // hello = val => "Hello"+val;
+        // document.write(hello());
+
+        // class car{
+        //     constructor(name, year){
+        //         this.nam = name;
+        //         this.year = year;
+        //     }
+        //     model(){
+        //     const date = new Date();
+        //     return date.getFullYear();
+        // }
+        // }
+       
+        // const myCar1 = new car("Ford",2014);
+        // document.getElementById("demo").innerHTML = myCar1.model();
+
+
+        class Age{
+            constructor(year, name){
+                this.year = year;
+                this.name = name;
+            }
+            age(x){
+                return x - this.year;
+            }
+        }
+
+        const date = new Date();
+        let year = date.getFullYear();
+
+
+        const myAge = new Age(1993,"Shafaullah");
+        document.getElementById("demo").innerHTML = "My Age is " + myAge.age(year) + "Year old";
+
+    </script>
+</body>
+</html>
