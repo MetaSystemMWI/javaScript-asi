@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <!-- <script type="module"> -->
+        <script>
+        // // import message from "./message.js";
+        // import {name, age} from "./person.js";
+        // let text = "My Name is "+ name + ", I am " + age + ".";
+        // // document.getElementById("demo").innerHTML = message();
+        // document.getElementById("demo").innerHTML = text;
+
+        const json = '{"result":true, "count":42}';
+        const obj = JSON.parse(json);
+
+        document.write(obj.count);
+        // Expected output: 42
+
+        document.write(obj.result);
+        // Expected output: true
+
+    </script>
+</body>
+</html>
