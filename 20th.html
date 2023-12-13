@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Accessors -->
+    <p id="demo"></p>
+    <script>
+        // let p ={firstname:"ali"}; //objective variable, inside of bracket is called properties of objective
+        // // function methods, 
+        // p.firstname;
+        // let p ={firstname:p1:{p2:"ali"};}
+        // const obj = {counter:0};
+        // Object.defineProperty(obj, "reset",{
+        //     get: function() {this.counter=0;}
+        // });
+        // Object.defineProperty(obj, "increment",{
+        //     get: function() {this.counter++;}
+        // });
+        // Object.defineProperty(obj, "dcrement",{
+        //     get: function() {this.counter--;}
+        // });
+        // Object.defineProperty(obj, "add",{
+        //     set: function(value) {this.counter+=value;}
+        // });
+        // Object.defineProperty(obj, "subtract",{
+        //     set: function(value) {this.counter-=value;}
+        // });
+
+        // obj.reset;
+        // obj.add=5;
+        // obj.subtract=1;
+        // obj.increment;
+        // obj.dcrement;
+        // document.getElementById("demo").innerHTML=obj.counter;
+
+        function person(first, last, age, eye){
+            this.firstName = first;
+            this.lastname = last;
+            this.Age = age;
+            this.EyeColor =eye;
+        }
+        const MyFather = new person("Ali","Ahmed",60,"yellow");
+        const MyFather2 = new person("Fateh","Ahmed",60,"yellow");
+
+        document.getElementById("demo").innerHTML = 
+        "My Father is " + MyFather.Age + ".";
+        document.getElementById("demo").innerHTML = 
+        "My Father is " + MyFather2.firstName + ".";
+    </script>
+</body>
+</html>
