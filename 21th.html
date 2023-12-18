@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        function myDisplayer(something){
+            document.getElementById("demo").innerHTML=something;
+        }
+        // function myCalculator(num1, num2, myCallBack){
+        //     let sum = num1+num2;
+        //     myCallBack(sum);
+        // }
+        // myCalculator(5,5, myDisplayer);
+
+        let myPromis = new Promise(function(MyResovle, myReject){
+            let x = 1;
+            if( x == 0){
+                MyResovle("Ok");
+            }else{
+                myReject("Error");
+            }
+        });
+
+        myPromis.then(
+            function(value) {myDisplayer(value);},
+            function(error){myDisplayer(error);}
+        );
+    </script>
+</body>
+</html>
