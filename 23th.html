@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p class="intro">Hello World</p>
+    <p id="demo"></p>
+    <script>
+        const x = document.querySelectorAll("p.intro");
+        document.getElementById("demo").innerHTML = x[0].innerHTML;
+
+    </script> -->
+
+
+    <form action="" id="frm1">
+        <input type="text" value="Ali" name="alfkdjafl"><br>
+        <input type="text" value="Ahmed" name="afdjafdjl"><br>
+        <a href="">Google</a>
+        <input type="submit" value="Submit" name="akldfjalfdja"><br>
+    </form>
+    <p id="demo"></p>
+    <script>
+        const x = document.forms["frm1"];
+        let t = "";
+        for(let i=0; i<x.length; i++){
+            t = t+x.elements[i].name+"<br>";
+        }
+        document.getElementById("demo").innerHTML=t;
+    </script>
+
+    <!-- anchors, body, documnetelement, embeds, forms, head, images, links, scripts, title -->
+</body>
+</html>
