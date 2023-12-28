@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="mybtn">Try it</button>
+    <p id="demo"></p>
+    <script>
+        // document.getElementById("mybtn").addEventListener("click",displayDate);
+        // // document.getElementById("mybtn").addEventListener("click",function(){
+        // //     alert("Hello World");
+        // // });
+        // function displayDate(){
+        //     // document.getElementById("demo").innerHTML=Date();
+        //     alert("HEllo World");
+        // }
+
+
+        var x = document.getElementById("mybtn");
+        x.addEventListener("mouseover", myFunction);
+        x.addEventListener("click",mySecondFunction);
+        x.addEventListener("mouseout",mythirdfunction);
+
+        function myFunction(){
+            document.getElementById("demo").innerHTML+="mouse over <br>";
+        }
+        function mySecondFunction(){
+            document.getElementById("demo").innerHTML+="Clicked <br>";
+        }
+        function  mythirdfunction(){
+            document.getElementById("demo").innerHTML+="mouse out <br>";
+        }
+    </script>
+    <input type="text">
+    click alert show please enter your name 
+    mouse over placeholder welcome to meta system 
+    mouse out placeholder exit
+</body>
+</html>
